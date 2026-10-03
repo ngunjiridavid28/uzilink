@@ -13,10 +13,6 @@ export default defineConfig(() => {
     },
     server: {
       allowedHosts: true as const,
-      // The Express server owns the preview connection, so Vite's client-side
-      // HMR socket must stay disabled. The preview proxy does not forward it.
-      hmr: false,
-      watch: null,
     },
   };
 });
