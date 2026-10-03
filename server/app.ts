@@ -1,20 +1,18 @@
 import express, { Response } from "express";
 import path from "path";
 import dotenv from "dotenv";
-import { createServer as createViteServer } from "vite";
-import { db } from "./server/db.js";
-import { requireAuth, AuthenticatedRequest } from "./server/middlewares/auth.middleware.js";
+import { db } from "./db.js";
+import { requireAuth, AuthenticatedRequest } from "./middlewares/auth.middleware.js";
 
 // Import Routers
-import authRoutes from "./server/routes/auth.routes.js";
-import listingRoutes from "./server/routes/listing.routes.js";
-import messageRoutes from "./server/routes/message.routes.js";
-import adminRoutes from "./server/routes/admin.routes.js";
+import authRoutes from "./routes/auth.routes.js";
+import listingRoutes from "./routes/listing.routes.js";
+import messageRoutes from "./routes/message.routes.js";
+import adminRoutes from "./routes/admin.routes.js";
 
 dotenv.config();
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3000;
 
 // Boost payload payload size limit to accept base64 fabric images
 app.use(express.json({ limit: "15mb" }));
@@ -31,11 +29,11 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve static assets from public
-const publicDir = path.join(process.cwd(), "public");
-app.use(express.static(publicDir));
-app.use("/assets", express.static(path.join(publicDir, "assets")));
-app.use("/images", express.static(path.join(publicDir, "images")));
+// Serve static assets from public/assets and public
+const publicPath = path.join(process.cwd(), "public");
+app.use(express.static(publicPath));
+app.use("/assets", express.static(path.join(publicPath, "assets")));
+app.use("/images", express.static(path.join(publicPath, "images")));
 
 /**
  * REST API Root Endpoint Group
@@ -94,31 +92,5 @@ app.all(["/api/*", "/auth/*", "/listings/*", "/messages/*", "/admin/*"], (req, r
   res.status(404).json({ message: `API endpoint ${req.method} ${req.path} not found` });
 });
 
-/**
- * Build Client & Framework Server integrations (Vite middleware or static fallback)
- */
-async function initializeServer() {
-  if (process.env.NODE_ENV !== "production") {
-    console.log("Starting server in DEVELOPMENT mode (Vite middleware integration)...");
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
-  } else {
-    console.log("Starting server in PRODUCTION mode (Static asset streaming service)...");
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
-  }
-
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`UziLink environment booted and listending on: http://localhost:${PORT}`);
-  });
-}
-
-initializeServer().catch((err) => {
-  console.error("Critical: Express core server boot sequence crashed!", err);
-});
+export { app };
+export default app;

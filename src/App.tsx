@@ -16,6 +16,7 @@ import {
   Home, ExternalLink, Leaf, Scale, MapPin, X, ArrowRight
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { resolveImageUrl, handleImageFallback } from "./lib/imageMap.js";
 
 export default function App() {
   const [user, setUser] = useState<UserProfile | null>(null);
@@ -618,10 +619,11 @@ export default function App() {
             >
               <div className="relative h-56 bg-stone-100">
                 <img
-                  src={selectedGuestListing.imageUrl}
+                  src={resolveImageUrl(selectedGuestListing.imageUrl)}
                   alt={selectedGuestListing.fabricType}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  onError={handleImageFallback}
                 />
                 <button
                   onClick={() => setSelectedGuestListing(null)}

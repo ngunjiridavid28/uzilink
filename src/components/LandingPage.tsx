@@ -8,6 +8,11 @@ import {
   HelpCircle, MessageSquare, ChevronDown
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import heroImg from "../assets/images/hero_kenyan_textile_1790988200150.jpg";
+import scrapsImg from "../assets/images/scraps_transformation_1790988212084.jpg";
+import collectionImg from "../assets/images/kenyan_textile_collection_1790988223725.jpg";
+import artisanImg from "../assets/images/artisans_workshop_1790988232395.jpg";
+import { resolveImageUrl, handleImageFallback } from "../lib/imageMap.js";
 
 interface LandingPageProps {
   user: UserProfile | null;
@@ -36,7 +41,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       weightKg: 450,
       quantity: 9,
       location: "Gikomba Market, Nairobi",
-      imageUrl: "/src/assets/images/hero_kenyan_textile_1790988200150.jpg",
+      imageUrl: heroImg,
       fabricType: "Denim & Twill Offcuts",
       material: "100% Cotton & Denim Blends",
       condition: "Post-consumer sorted scraps (hardware-free)",
@@ -60,7 +65,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       weightKg: 280,
       quantity: 5,
       location: "Industrial Area, Nairobi",
-      imageUrl: "/src/assets/images/scraps_transformation_1790988212084.jpg",
+      imageUrl: scrapsImg,
       fabricType: "Combed Cotton Jersey",
       material: "100% Combed Cotton",
       condition: "Pre-consumer cutting scraps",
@@ -84,7 +89,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       weightKg: 1200,
       quantity: 24,
       location: "Mombasa Port Depot",
-      imageUrl: "/src/assets/images/kenyan_textile_collection_1790988223725.jpg",
+      imageUrl: collectionImg,
       fabricType: "Synthetic Fleece Bales",
       material: "100% Recycled Polyester (rPET)",
       condition: "Post-consumer sorted bales",
@@ -297,10 +302,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-stone-100 aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/3] group">
                 <img
-                  src="/src/assets/images/hero_kenyan_textile_1790988200150.jpg"
+                  src={resolveImageUrl(heroImg)}
                   alt="Kenyan textile sorters and artisans working with colorful fabric scraps in Nairobi"
                   className="w-full h-full object-cover group-hover:scale-103 transition duration-700"
                   referrerPolicy="no-referrer"
+                  onError={handleImageFallback}
                 />
                 
                 {/* Floating Micro Badge 1: Location & Context */}
@@ -516,10 +522,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="lg:col-span-6">
               <div className="rounded-2xl overflow-hidden shadow-lg border border-stone-200 bg-stone-100 aspect-[16/9]">
                 <img
-                  src="/src/assets/images/scraps_transformation_1790988212084.jpg"
+                  src={resolveImageUrl(scrapsImg)}
                   alt="Finished upcycled products from Kenyan textile scraps"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  onError={handleImageFallback}
                 />
               </div>
             </div>
@@ -627,10 +634,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                   {/* Photo with Overlay Badge */}
                   <div className="relative h-48 bg-stone-100 overflow-hidden">
                     <img
-                      src={item.imageUrl}
+                      src={resolveImageUrl(item.imageUrl)}
                       alt={item.fabricType}
                       className="w-full h-full object-cover group-hover:scale-104 transition duration-500"
                       referrerPolicy="no-referrer"
+                      onError={handleImageFallback}
                     />
                     <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-slate-900 text-[10px] font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider border border-stone-200">
                       Recyclability: {item.recyclabilityScore}%

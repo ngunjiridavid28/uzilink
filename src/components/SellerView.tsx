@@ -3,6 +3,7 @@ import { api } from "../lib/api.js";
 import { ListingItem, UserProfile } from "../types.js";
 import { UploadCloud, FileText, Weight, Layers, MapPin, Sparkles, AlertCircle, Heart, FolderPlus, Trash2 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { resolveImageUrl, handleImageFallback } from "../lib/imageMap.js";
 
 interface SellerViewProps {
   user: UserProfile;
@@ -441,7 +442,12 @@ export const SellerView: React.FC<SellerViewProps> = ({ user, showToast, onRefre
                   {listings.map((l) => (
                     <tr key={l.id} className="hover:bg-slate-850/50 transition">
                       <td className="px-6 py-4">
-                        <img src={l.imageUrl} className="w-10 h-10 object-cover rounded-lg border border-slate-800" />
+                        <img 
+                          src={resolveImageUrl(l.imageUrl)} 
+                          alt={l.fabricType}
+                          className="w-10 h-10 object-cover rounded-lg border border-slate-800" 
+                          onError={handleImageFallback}
+                        />
                       </td>
                       <td className="px-6 py-4 font-bold text-white">
                         <div>{l.fabricType}</div>

@@ -107,9 +107,301 @@
       "organizationName": "Charlie Co",
       "location": "Kisumu",
       "createdAt": "2026-10-03T00:20:20.878Z"
+    },
+    {
+      "id": "u-1790986986941-ido8",
+      "name": "David",
+      "email": "ngunjiridavid28@gmail.com",
+      "passwordHash": "1e4a0bf96c0fe609d8f9d8a5e59967ef:da53cf51110c291b2f1aa37bd6b0c464fb7fe634584978788f434594c850e3c450a33d99f66dcf8891d714425f73c0a8f6675df6bc29589a653589bb9ac4649a",
+      "role": "SELLER",
+      "verified": false,
+      "approvalStatus": "APPROVED",
+      "organizationName": "yy",
+      "location": "chuka",
+      "createdAt": "2026-10-03T00:23:06.944Z"
+    },
+    {
+      "id": "u-1790988685102-7gzy",
+      "name": "Kenyan Textile Trader",
+      "email": "trader.kenya@gmail.com",
+      "passwordHash": "0c75a4cb530cf469c8ce1be1b49e1557:3808fd05db7c215b9221082e863ad60000632c2b13d34449447c4aa4be4e742636675b5da27bf8a2c66cbea4e78c4c1864ca37452a1545766698c64ebe8596ed",
+      "role": "SELLER",
+      "verified": false,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Kenyan Eco Hub",
+      "location": "Nairobi, Kenya",
+      "createdAt": "2026-10-03T00:51:25.103Z"
+    },
+    {
+      "id": "u-1790990742810-tub8",
+      "name": "Vercel Test",
+      "email": "vercel@test.com",
+      "passwordHash": "7788942802b84d67f42a92b459543fb3:471b44e13631899aa6fab34b70908fd9424304c53566fffdef549d09c0c5257e03a0fd54b4578b90073999915d801c8d63cc2b752b07c979acf188c5f96b465a",
+      "role": "SELLER",
+      "verified": false,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Vercel Depot",
+      "location": "Nairobi",
+      "createdAt": "2026-10-03T01:25:42.811Z"
     }
   ],
   "listings": [
+    {
+      "id": "list-1790989579856",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 92,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Denim & Heavy Twill",
+      "material": "98% Cotton, 2% Elastane Blend",
+      "condition": "Post-Consumer Wearing Waste",
+      "color": "Faded Denim Indigo Blue",
+      "texture": "Rough twill, dense mechanical weave",
+      "recyclabilityScore": 85,
+      "estimatedPriceKES": 9500,
+      "confidence": 88,
+      "recommendedIndustries": [
+        "Eco-apparel spinning",
+        "Thermal & Acoustic insulation manufacturing",
+        "Industrial cloth wipes"
+      ],
+      "upcyclingIdeas": [
+        "Denim pocket bags",
+        "Patchwork quilt sheets",
+        "Shredded insulation wall panels"
+      ],
+      "carbonSavingsKg": 360,
+      "description": "Sorted indigo denim offcuts that are clean and metal-stripped. Suitable directly for shredding and blending into recycled yarn.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:06:19.856Z"
+    },
+    {
+      "id": "list-1790989578246",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 92,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Fine Jersey Cotton Knit",
+      "material": "100% Combed Cotton Jersey",
+      "condition": "Overstock Tee Rolls (Slight dust damage)",
+      "color": "Creamy Alabaster White",
+      "texture": "Soft feel, single-knit weave standard",
+      "recyclabilityScore": 96,
+      "estimatedPriceKES": 18500,
+      "confidence": 92,
+      "recommendedIndustries": [
+        "Premium apparel weaving",
+        "Clean sterile wiping cottons",
+        "Paper compounding mills"
+      ],
+      "upcyclingIdeas": [
+        "Zero-waste kids clothes",
+        "Textured paper pulp stationary",
+        "Recycled cotton blankets"
+      ],
+      "carbonSavingsKg": 660,
+      "description": "Pure combed t-shirt jersey cuttings. Fully bleach-approved white color makes it highly valuable for premium recycled cotton fabrics.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:06:18.246Z"
+    },
+    {
+      "id": "list-1790989576349",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 92,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Synthetic Fleece Knit",
+      "material": "100% Recycled Polyester (rPET)",
+      "condition": "Pre-Consumer Apparel Scrap Waste",
+      "color": "Mixed Dark Charcoal and Onyx Black",
+      "texture": "Fluffy wooly texture, high pile knit",
+      "recyclabilityScore": 91,
+      "estimatedPriceKES": 24000,
+      "confidence": 96,
+      "recommendedIndustries": [
+        "Fiber-to-fiber polyester formulation",
+        "Geotextile fabric braiding",
+        "Outdoor carpet layering"
+      ],
+      "upcyclingIdeas": [
+        "Acoustic dampening tiles",
+        "Heavy duty packaging padding",
+        "Recycled polyester pellet compounding"
+      ],
+      "carbonSavingsKg": 1050,
+      "description": "Premium pre-consumer dark fleece textile cuttings. High polymer purity enables melt extrusion or chemical recycling.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:06:16.349Z"
+    },
+    {
+      "id": "list-1790989573741",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 92,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Synthetic Fleece Knit",
+      "material": "100% Recycled Polyester (rPET)",
+      "condition": "Pre-Consumer Apparel Scrap Waste",
+      "color": "Mixed Dark Charcoal and Onyx Black",
+      "texture": "Fluffy wooly texture, high pile knit",
+      "recyclabilityScore": 91,
+      "estimatedPriceKES": 24000,
+      "confidence": 96,
+      "recommendedIndustries": [
+        "Fiber-to-fiber polyester formulation",
+        "Geotextile fabric braiding",
+        "Outdoor carpet layering"
+      ],
+      "upcyclingIdeas": [
+        "Acoustic dampening tiles",
+        "Heavy duty packaging padding",
+        "Recycled polyester pellet compounding"
+      ],
+      "carbonSavingsKg": 1050,
+      "description": "Premium pre-consumer dark fleece textile cuttings. High polymer purity enables melt extrusion or chemical recycling.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:06:13.741Z"
+    },
+    {
+      "id": "list-1790989566763",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 92,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Fine Jersey Cotton Knit",
+      "material": "100% Combed Cotton Jersey",
+      "condition": "Overstock Tee Rolls (Slight dust damage)",
+      "color": "Creamy Alabaster White",
+      "texture": "Soft feel, single-knit weave standard",
+      "recyclabilityScore": 96,
+      "estimatedPriceKES": 18500,
+      "confidence": 85,
+      "recommendedIndustries": [
+        "Premium apparel weaving",
+        "Clean sterile wiping cottons",
+        "Paper compounding mills"
+      ],
+      "upcyclingIdeas": [
+        "Zero-waste kids clothes",
+        "Textured paper pulp stationary",
+        "Recycled cotton blankets"
+      ],
+      "carbonSavingsKg": 660,
+      "description": "Pure combed t-shirt jersey cuttings. Fully bleach-approved white color makes it highly valuable for premium recycled cotton fabrics.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:06:06.763Z"
+    },
+    {
+      "id": "list-1790989560631",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 92,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAABQIDBAEGB//EAD8QAAEDAwIDBAcFBQgDAAAAAAEAAgMEESESMQVBURMiYXEGMoGRobHBFEJS4fEjQ2Jy0RYlM1OCotLwFSQ0/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAjEQEAAgICAgICAwAAAAAAAAAAAQIDESExMkESIhNRFDNh/9oADAMBAAIRAxEAPwD7ihCEAIQhACELiA6q5po4YzJK8NYNyVGoqoaZhfPI1jRzK85xSv8A/IlraVxMOm7DtqduCnpSbSW1tH44jRkf/TF0y5B4jRNJBqobjcawvFRula4te1+e9kg49+yqq5XElzGOBI8F0/xY/af5Je4p+J0VVOYKeoZJKBqLWnkti8B6Hgu4rWSuB1xxtsb/AIif+K9vHVxOf2eoCQbg4UMuP4W1B6X+UNCFwG66pHCEIQAhCEAIQhACEIQAuEgLqV8eqnwUmiI6ZJDpBG4HNbWJtOoZM6XVXE6eAlrSZHjdrOXmeSXTcVqJbhhEbf4cn3pNTh/2rsbnS2Mu88hatOCQcLrjDWvaXzmVjg5ztTyXE8yblY4B2IZot3RyWtrrt8QspGmIOksLNy7YKkFfNPT3h/Gqb0hqaj+0MXDqGdwNOJa2WIW0jFmi290goaDiNdUOMXpZFUdgBLIIqyd9mgi+7bL61xV1NxamjbEyKcxYvIy7beFx5e9JqGCOeRzjT9lSQOIqCGAGQj92OpJ9i2MfuWTZ6n0Mon0vDnVMznvlqSDeT1tI9W+BnJO3NN5HPMpLcXOfHAXKGqpqunBpJWuazBGxaehB2UDfUet9lKeZk3rTZFUuYSAXNbfzWyOpBHfGOrcpQXENtyVMVTJHWsaLuYXBp8tkk44k0W09K17XC7TcKSV0jzHWSsJu0tDhnkb/AFBTMbKFo1KkTt1CEJWhCEIAQhCA4dl5visgqK7BuyPA9n5p9WTdhTvfztZvnyXmDuefir4K87TyT6ZKUX4lHIDawcxw6jcfH5rfURgP1DF90tiDouMMF+6459ybTi7bc1027hKGYbEjHJZKrhzayIxzO1x7WBt71sbYOAdspkGOUDk47IidN1t508KmpdMcT/2bngZF8H6rfUUjGxtijFg3YDZNKhrSLOAw9pHvVMoGsY8E35JkvxiC6g4R2Momilkjl/E02T6PUbF5u7Ym1lVB6gWhm/gp2ts0K5nBtx4LFSXdM+S+Qbq6tdpAPIlU0Tgzt3nLWRudgdFscRsGnD3GWqnlNi0ARNt4b/NOIX3FuiRUEgZ2TY/VI1W802ZJpe2+BexXPkqestiEBCgqEIQgBcXVwoBPx6YjTGD6oLj57D6pTGdTGkK7iEpmnmeMgvsPIYWOkfZzmHcbrux11VC08ipjc3ilG8C7HEh3gbYTF+XJBVNq/wC09K82FI1pLTfclp5L0AOrPJNfjRYZZWattwrtPbU7XD1mrjh3j7VKiIu+6WZ4apqnfsWSDmWt+Kqke0yYIxcW8VoqYrNc2/3w4LNPqdMy5vY2z0AK2A0R3bGCVfA8uaXclTJmC/VTpz+xesnkKKwl0ZuNisFTUuo6OadpthovbkXNumFRsHj1XbhKONdq3hFSKcEzAsEY8S9oHzCeuvbJOeDzuqJS+zC0NBLmjmdgmj3hriDz59Ev4Wfs9NFG5gEhaC8t21WzhMQ7W1jnbndRv5Hr0YU0naxNdfwPmrVioB2b5I+Rs4fVbVy2jUqx0EIQsaFRWy9jSyyDdrcefJXpXx6S0DIvxuufIZ/ompG7RDJnUErWkNWWUaJS4b3W+PN1lqmXY+24zdd0OeVdW5wfQgC//sH3dm/8kwa+zbc7LFC0STB5JGiFxDfEuYL+6/vV7twsn9NXuFi081GG7ZndFI7M6Bca39oLLAnV4GOZCyTkCQYtc4vz/wC5WyqGGk9R8wstQ1uHNJwUQFzhanAK5SnuOv0uESGzI2+C4SWAkdLLQhGO1pJBi4dhUxgPa/W0GwG/mFo4e4anROG+Quikn1ysgLe0c0mO4wSM2Pna10b0NbRFS/TpjhKuE9Q9uQGW6LsNWzQHTRFjg7Q4dCtd45btIAcEsz/jYXUEuvs3ne5a4+aZJPTMMTngHB7w804GQubJ2rV1CEKZnOSRcYk11mn/AC2W9pyfonp2Xm6x2upkdfd5t8voq4Y+xLzwri8FXPhr7q6MC+FCRvaBzSupJVSRH7NVz57rmwgEc8OP0QLk5TVjP7jOofe1Z/mS17dOyWs722Y0tBuAPYuBxa4KBNgEXOoLWNE5Do88iFlqfWbtYuFrHwWiTMfxWecd4E4Or6IgL5bCYE+qAAqp+7qF79FdU4Ad1ss9SLOA6BaBStudXMc0xoZmvrYmF41AHHsWGj0lxa54bfZMKKmj+1xva0XYT8kmTWpbXtgrYrVk4wNUxc4ez9Fd0N+VsKPFo7cQlza4a74W+i5G8BoG+FteawJ7aKd8jXsJ77Dgkck7iN42nwSCmf3yAeaeUpvGfAlRzQei5CEKCiMjtMbnHkLry7u8B1tdejrnaaOY/wABHvwvO4EvsV8HuU8itspZhysY8PcNO65LGCCbKFH3qiMdHD5ronpOOzviYFPwvQNhpb8UlB1ZTf0gzSxN6yj5FJQC0G59ilhj67NftP1ibckfeF1OOwHmg6bA35qpXam4is3fHzC5K4HSSCbnocKUpu2/goSZeLogCpfdjB4rtS0OYH9bKua2kWN8rSB2tOWnllAZGwHURcjF1v4QXiu7zr4sVijsHaS7bC18NLftDTqzrCW/NZbXtbxlgFdGXYEkdh5g/mqGRMYN1q9JRppoZebZLX8/0SkyOewDVnwWY+aQ23Et8QaJBp3O6b0LrteOYOV5+mPecTuGp3w4959vApMscNpPLehCFzKsfFHaaN3iQEg3kPgnfGDaj/1hIj/iOt1XVh8Ur9rybtuucKj/ALyY3kCXH3fouRkWt0W3g0eqqlk/C23v/RPedVksdrOP+pBb8RSgC5zsmvHT34B5pc0JcXhDb9pC1kFgOyGgE2IUgC3qn2VRMC2PzIHxUpSA5oBOSTnkuVcmmNpIP+Iwf7grZ2tc0ZyOi0IObqZhSpn6CQdlQCWmyncXCA0SwRynU12k9AoMgfC9r2HUBuFEFS1PHPZYDTjje04TIbXI0O+I/NIBpAGnovT1Ef2nhj427visPOy8vDaSO7SLtGQp4epg2TtdTyWDz4D5pzwp955G9APkEiiF3kdU34H3p5D1BPyTZY+syyvZ0hA2QuNdh4uL0Lza4bYlIA4b335p9xmTRQkD7zgEgYB0XVh8Ur9rWZcCOqc8Gj0U7n2y910lAFwRgr0VA3TSRAi3dv71maeBTsr4269Uxv4Wj43/AKLBfIWvipvXyeAA+H5rHdPj8YLbtJhypiRRAO645NpgkAkjdq2Fj7kSgteCdueVXM+0TvGwV83ftp38VoVABxsDlGm2Fw4PQqZF3AoAabYcNlI6XDBUSMm+3VQOEB6aiN6WL+QLy1RGaWsmY2wLXG3kvTcOOqii8km47Ho4k14AAdEPgf0UMM6vMKW8S3WNfc7r7d5jjb2jwTj0fIE0jdVzoFwAcJe2xAvY+xMeFSWqgCcOaRlVyc1klezwIQhcS5P6QuIhgA2LifglMZuF1C6sXilftMZwvUMFmgDYLiEmf0KPP15Jrp79fosyEK1OiT2sjXP3hXUJgzVeNPTW3HtVzidTc80IWgTeqCujZCFgQJO1zZcQhAP+Dm9C3zKxekLR2tMeZ1D5IQuaP7VJ8CxwsMXWqjcW1MNj98IQum/Upx29KhCFwOh//9k=",
+      "fabricType": "Denim & Heavy Twill",
+      "material": "98% Cotton, 2% Elastane Blend",
+      "condition": "Post-Consumer Wearing Waste",
+      "color": "Faded Denim Indigo Blue",
+      "texture": "Rough twill, dense mechanical weave",
+      "recyclabilityScore": 85,
+      "estimatedPriceKES": 9500,
+      "confidence": 88,
+      "recommendedIndustries": [
+        "Eco-apparel spinning",
+        "Thermal & Acoustic insulation manufacturing",
+        "Industrial cloth wipes"
+      ],
+      "upcyclingIdeas": [
+        "Denim pocket bags",
+        "Patchwork quilt sheets",
+        "Shredded insulation wall panels"
+      ],
+      "carbonSavingsKg": 360,
+      "description": "Sorted indigo denim offcuts that are clean and metal-stripped. Suitable directly for shredding and blending into recycled yarn.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:06:00.631Z"
+    },
+    {
+      "id": "list-1790989523298",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 34,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Synthetic Fleece Knit",
+      "material": "100% Recycled Polyester (rPET)",
+      "condition": "Pre-Consumer Apparel Scrap Waste",
+      "color": "Mixed Dark Charcoal and Onyx Black",
+      "texture": "Fluffy wooly texture, high pile knit",
+      "recyclabilityScore": 91,
+      "estimatedPriceKES": 24000,
+      "confidence": 93,
+      "recommendedIndustries": [
+        "Fiber-to-fiber polyester formulation",
+        "Geotextile fabric braiding",
+        "Outdoor carpet layering"
+      ],
+      "upcyclingIdeas": [
+        "Acoustic dampening tiles",
+        "Heavy duty packaging padding",
+        "Recycled polyester pellet compounding"
+      ],
+      "carbonSavingsKg": 1050,
+      "description": "Premium pre-consumer dark fleece textile cuttings. High polymer purity enables melt extrusion or chemical recycling.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:05:23.299Z"
+    },
+    {
+      "id": "list-1790989389166",
+      "sellerId": "u-1790988685102-7gzy",
+      "sellerName": "Kenyan Textile Trader",
+      "weightKg": 34,
+      "quantity": 1,
+      "location": "Nairobi, Kenya",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "fabricType": "Denim & Heavy Twill",
+      "material": "98% Cotton, 2% Elastane Blend",
+      "condition": "Post-Consumer Wearing Waste",
+      "color": "Faded Denim Indigo Blue",
+      "texture": "Rough twill, dense mechanical weave",
+      "recyclabilityScore": 85,
+      "estimatedPriceKES": 9500,
+      "confidence": 96,
+      "recommendedIndustries": [
+        "Eco-apparel spinning",
+        "Thermal & Acoustic insulation manufacturing",
+        "Industrial cloth wipes"
+      ],
+      "upcyclingIdeas": [
+        "Denim pocket bags",
+        "Patchwork quilt sheets",
+        "Shredded insulation wall panels"
+      ],
+      "carbonSavingsKg": 360,
+      "description": "Sorted indigo denim offcuts that are clean and metal-stripped. Suitable directly for shredding and blending into recycled yarn.",
+      "status": "DRAFT",
+      "viewsCount": 0,
+      "createdAt": "2026-10-03T01:03:09.166Z"
+    },
     {
       "id": "list-1",
       "sellerId": "u-seller-1",
@@ -281,6 +573,94 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit-1790990742811-gkxm",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: Vercel Test (vercel@test.com) as SELLER",
+      "timestamp": "2026-10-03T01:25:42.811Z"
+    },
+    {
+      "id": "audit-1790989579856-o6wv",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Denim & Heavy Twill - 92Kg",
+      "timestamp": "2026-10-03T01:06:19.856Z"
+    },
+    {
+      "id": "audit-1790989578246-bbz3",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Fine Jersey Cotton Knit - 92Kg",
+      "timestamp": "2026-10-03T01:06:18.246Z"
+    },
+    {
+      "id": "audit-1790989576351-llon",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Synthetic Fleece Knit - 92Kg",
+      "timestamp": "2026-10-03T01:06:16.351Z"
+    },
+    {
+      "id": "audit-1790989573742-p79b",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Synthetic Fleece Knit - 92Kg",
+      "timestamp": "2026-10-03T01:06:13.742Z"
+    },
+    {
+      "id": "audit-1790989566763-jf48",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Fine Jersey Cotton Knit - 92Kg",
+      "timestamp": "2026-10-03T01:06:06.763Z"
+    },
+    {
+      "id": "audit-1790989560632-eos7",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Denim & Heavy Twill - 92Kg",
+      "timestamp": "2026-10-03T01:06:00.632Z"
+    },
+    {
+      "id": "audit-1790989523299-5r1x",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Synthetic Fleece Knit - 34Kg",
+      "timestamp": "2026-10-03T01:05:23.299Z"
+    },
+    {
+      "id": "audit-1790989389188-qgur",
+      "userId": "u-1790988685102-7gzy",
+      "userEmail": "trader.kenya@gmail.com",
+      "action": "LISTING_CREATED",
+      "details": "Listing created: Denim & Heavy Twill - 34Kg",
+      "timestamp": "2026-10-03T01:03:09.188Z"
+    },
+    {
+      "id": "audit-1790988685103-hj8p",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: Kenyan Textile Trader (trader.kenya@gmail.com) as SELLER",
+      "timestamp": "2026-10-03T00:51:25.103Z"
+    },
+    {
+      "id": "audit-1790986986944-hv2e",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: David (ngunjiridavid28@gmail.com) as SELLER",
+      "timestamp": "2026-10-03T00:23:06.944Z"
+    },
     {
       "id": "audit-1790986824347-1wfc",
       "userId": "u-seller-1",

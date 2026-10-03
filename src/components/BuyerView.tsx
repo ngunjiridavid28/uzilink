@@ -3,6 +3,7 @@ import { api } from "../lib/api.js";
 import { ListingItem, UserProfile } from "../types.js";
 import { Search, MapPin, Scale, Leaf, Heart, ArrowRight, ShieldCheck, HelpCircle, Filter } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { resolveImageUrl, handleImageFallback } from "../lib/imageMap.js";
 
 interface BuyerViewProps {
   user: UserProfile;
@@ -220,9 +221,10 @@ export const BuyerView: React.FC<BuyerViewProps> = ({
               {/* Image Section */}
               <div className="relative h-44 overflow-hidden bg-slate-950">
                 <img
-                  src={item.imageUrl}
+                  src={resolveImageUrl(item.imageUrl)}
                   alt={item.fabricType}
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  onError={handleImageFallback}
                 />
                 
                 {/* Floating Tags */}
@@ -295,9 +297,10 @@ export const BuyerView: React.FC<BuyerViewProps> = ({
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="relative h-64 md:h-full bg-slate-950 border-r border-slate-800/50">
                   <img
-                    src={selectedListing.imageUrl}
+                    src={resolveImageUrl(selectedListing.imageUrl)}
                     alt={selectedListing.fabricType}
                     className="w-full h-full object-cover"
+                    onError={handleImageFallback}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex flex-col justify-end p-5">
                     <h3 className="text-xl font-black text-white">{selectedListing.fabricType}</h3>

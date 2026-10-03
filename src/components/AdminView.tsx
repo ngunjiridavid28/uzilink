@@ -3,6 +3,7 @@ import { api } from "../lib/api.js";
 import { AdminAnalyticsReport, UserProfile, ListingItem } from "../types.js";
 import { ShieldCheck, Users, Percent, Trash2, CheckCircle2, XCircle, AlertCircle, RefreshCw, BarChart2 } from "lucide-react";
 import { motion } from "motion/react";
+import { resolveImageUrl, handleImageFallback } from "../lib/imageMap.js";
 
 interface AdminViewProps {
   user: UserProfile;
@@ -299,7 +300,12 @@ export const AdminView: React.FC<AdminViewProps> = ({ user, showToast, onRefresh
                     <tr key={item.id} className="hover:bg-slate-850/50">
                       <td className="px-6 py-4 font-bold text-white">
                         <div className="flex items-center gap-2">
-                          <img src={item.imageUrl} className="w-8 h-8 object-cover rounded" />
+                          <img 
+                            src={resolveImageUrl(item.imageUrl)} 
+                            alt={item.fabricType}
+                            className="w-8 h-8 object-cover rounded" 
+                            onError={handleImageFallback}
+                          />
                           <span className="truncate max-w-44">{item.fabricType}</span>
                         </div>
                       </td>
