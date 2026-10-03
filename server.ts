@@ -106,7 +106,9 @@ async function initializeServer() {
     const vite = await createViteServer({
       server: {
         middlewareMode: true,
-        hmr: { server: httpServer },
+        // The preview proxy does not forward this custom server's HMR socket.
+        // Disable Vite's injected client socket to avoid repeated closed-before-opened errors.
+        hmr: false,
       },
       appType: "spa",
     });
