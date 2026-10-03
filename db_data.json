@@ -1,0 +1,331 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "name": "UziLink System Admin",
+      "email": "admin@uzilink.com",
+      "passwordHash": "5cc6bba45d2a9344ec0e5394cbfd2c8a:ac887034cb8f618655ee15181ee9e9f6bc160951b831743e5ca94c351dd5d8c43b911f2410c1c9ab859a3920ff4f3110978f4befc92dbdde6154ea3753ad495c",
+      "role": "ADMIN",
+      "verified": true,
+      "approvalStatus": "APPROVED",
+      "organizationName": "UziLink Ltd",
+      "location": "Nairobi, HQ",
+      "createdAt": "2026-10-03T00:11:22.598Z"
+    },
+    {
+      "id": "u-seller-1",
+      "name": "David mitumba Trader",
+      "email": "seller@uzilink.com",
+      "passwordHash": "0e85043b1e339fc005a20be394d9ef4f:4f5752cd0d24170923522dad9f03df1ca114877708964ca7ea682683562fcab40c9022fe0b17b2d4df209d7cdf652a820677fcb22773a88d519041c712647226",
+      "role": "SELLER",
+      "verified": true,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Nairobi Mitumba Sorting",
+      "location": "Gikomba Market, Nairobi",
+      "createdAt": "2026-10-03T00:11:22.599Z"
+    },
+    {
+      "id": "u-recycler-1",
+      "name": "Green Loop Fiber Recyclers",
+      "email": "recycler@uzilink.com",
+      "passwordHash": "334ffd8bbb7029b8afb8a443466df3e5:7613b1175826149139f708cb794df0fe958118c37f658cf0be54e56fe84ce53b74aca61379ac69e5556586ebbf32c60e6f0debe4bcb2e60d07ab3c758d657338",
+      "role": "RECYCLER",
+      "verified": true,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Green Loop Textile Solutions",
+      "location": "Industrial Area, Nairobi",
+      "createdAt": "2026-10-03T00:11:22.600Z"
+    },
+    {
+      "id": "u-manuf-1",
+      "name": "Rivatex East Africa",
+      "email": "manufacturer@uzilink.com",
+      "passwordHash": "c5fdb2c90dbbb356cf0c3490d080dfd9:9db91291a2544ff01f36a4c7b360c799fadcc47756feaef45e47887c402fea21bcfc70a3a2faef680bf3e4c09162280f122e9b647e3b9143eff8f24fc1f95af9",
+      "role": "MANUFACTURER",
+      "verified": true,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Rivatex Textile Millers",
+      "location": "Eldoret, Kenya",
+      "createdAt": "2026-10-03T00:11:22.601Z"
+    },
+    {
+      "id": "u-epr-1",
+      "name": "Joyce Kamau (KEPRO)",
+      "email": "epr@uzilink.com",
+      "passwordHash": "d95c0fa8499196493cb75ac2c86f6f68:352ac26ee6bb85a8c8ad7fe18fa5f83df28d1013b95185d996d0ad0a8fece5726e43c01034c2b66a58f20930024dc702176445a8ebfe87121251baca07721d1b",
+      "role": "EPR",
+      "verified": true,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Kenya Extended Producer Responsibility Org",
+      "location": "Gigiri, Nairobi",
+      "createdAt": "2026-10-03T00:11:22.602Z"
+    },
+    {
+      "id": "u-1790986649422-4d3k",
+      "name": "Test User",
+      "email": "test@example.com",
+      "passwordHash": "14bcff4d26b168c155ee04fbd185d4c9:2812c5098eef57367467910e0437e5fca9e729d881a11cc62bdb52856978674914f2857c82113ef9ba38d3b64526700295b38bfc399966d6bb72f1aaa566bc10",
+      "role": "SELLER",
+      "verified": false,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Org",
+      "location": "Nairobi",
+      "createdAt": "2026-10-03T00:17:29.423Z"
+    },
+    {
+      "id": "u-1790986814228-ldx9",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "passwordHash": "29a8a55a0fd3d0ab98b1525b71dd825a:68d3b94578d3f7f15d8911e9269603af9bcf725ade7bc64da30f7b40a857b1af42cc4ad71d4aeafb80cbb1d2cf2a4cf2b31690c3bea80cc0fd1c269c024e5572",
+      "role": "SELLER",
+      "verified": false,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Alice Circular",
+      "location": "Nairobi",
+      "createdAt": "2026-10-03T00:20:14.229Z"
+    },
+    {
+      "id": "u-1790986817533-jy8w",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "passwordHash": "8c39fec32db69179c50098d3613f58fe:bbb863dc2d37eab3964ef12cb16cd73f299b8cdd347e1f45f8f79683dc2e6e8c6361b636ff08c625491567ace97e9489c854f3a75f7827644a000197ca3f902f",
+      "role": "RECYCLER",
+      "verified": false,
+      "approvalStatus": "PENDING",
+      "organizationName": "Bob Recyclers",
+      "location": "Mombasa",
+      "createdAt": "2026-10-03T00:20:17.534Z"
+    },
+    {
+      "id": "u-1790986820877-f2ru",
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "passwordHash": "3e8cf0d981d18a122ad7f039838d7606:4cd1312fbc40903a578ed347f80b8351addb80b56fca4bf7069c74cf464c79d996b45158059bea97ac048a5a43f82e5af2d147e4eea4ce8193b9159c6218a459",
+      "role": "SELLER",
+      "verified": false,
+      "approvalStatus": "APPROVED",
+      "organizationName": "Charlie Co",
+      "location": "Kisumu",
+      "createdAt": "2026-10-03T00:20:20.878Z"
+    }
+  ],
+  "listings": [
+    {
+      "id": "list-1",
+      "sellerId": "u-seller-1",
+      "sellerName": "David Mitumba Trader",
+      "weightKg": 450,
+      "quantity": 9,
+      "location": "Gikomba Market, Nairobi",
+      "imageUrl": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&q=80&w=600",
+      "fabricType": "Denim & Twill",
+      "material": "100% Cotton & Denim Blends",
+      "condition": "Post-consumer Textile Waste (Sorted)",
+      "color": "Blue, Teal, Charcoal",
+      "texture": "Rough, Heavy weave",
+      "recyclabilityScore": 84,
+      "estimatedPriceKES": 27500,
+      "confidence": 94,
+      "recommendedIndustries": [
+        "Eco-Jeans Manufacturing",
+        "Insulation & Acoustic Panel Production",
+        "Upholstery & Heavy Duty Bags"
+      ],
+      "upcyclingIdeas": [
+        "Denim patchwork tote bags",
+        "Premium recycled denim yarn",
+        "Thermal isolation boards"
+      ],
+      "carbonSavingsKg": 1350,
+      "description": "Batch of sorted post-consumer denim and denim waste cutouts. Sorted carefully, stripped of metal rivets, buttons, and zippers. Excellent candidate for mechanical recycling back into cotton yarn or high-strength insulation batts.",
+      "status": "SOLD",
+      "viewsCount": 24,
+      "createdAt": "2026-09-30T00:11:22.602Z"
+    },
+    {
+      "id": "list-2",
+      "sellerId": "u-seller-1",
+      "sellerName": "David Mitumba Trader",
+      "weightKg": 280,
+      "quantity": 5,
+      "location": "Nanyuki Sorting Depot",
+      "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=600",
+      "fabricType": "Knit Jersey",
+      "material": "Polyester-Cotton Blends (60/40)",
+      "condition": "Pre-consumer Manufacturing Cutting Scraps",
+      "color": "Multi-color Mixed",
+      "texture": "Soft, Stretchy",
+      "recyclabilityScore": 72,
+      "estimatedPriceKES": 14000,
+      "confidence": 88,
+      "recommendedIndustries": [
+        "Wiping rags & industrial absorbents",
+        "Non-woven textile machinery",
+        "Automotive seat stuffing"
+      ],
+      "upcyclingIdeas": [
+        "Mechanically shredded fluff for matresses",
+        "Industrial oil absorption pillows",
+        "Low-cost cleaning wipers"
+      ],
+      "carbonSavingsKg": 620,
+      "description": "Fresh manufacturing scraps and offcuts of knit jersey sports apparel. Pure dry waste, clean and unwashed. Highly elastic fibers ready for industrial non-woven felt processing or shredding.",
+      "status": "PUBLISHED",
+      "viewsCount": 15,
+      "createdAt": "2026-10-02T00:11:22.602Z"
+    },
+    {
+      "id": "list-3",
+      "sellerId": "u-seller-1",
+      "sellerName": "David Mitumba Trader",
+      "weightKg": 1200,
+      "quantity": 24,
+      "location": "Mombasa Port Warehouse",
+      "imageUrl": "https://images.unsplash.com/photo-1563161402-8411cf22c882?auto=format&fit=crop&q=80&w=600",
+      "fabricType": "Synthetic Fleece",
+      "material": "100% Recycled Polyester (PET)",
+      "condition": "Bale Waste - Impure Post-consumer",
+      "color": "Black & Dark Gray",
+      "texture": "Soft, Fuzzy, Medium Pile",
+      "recyclabilityScore": 92,
+      "estimatedPriceKES": 68000,
+      "confidence": 96,
+      "recommendedIndustries": [
+        "Fiber-to-fiber polyester spinning",
+        "Carpet and rug manufacturing",
+        "Geotextile fabric weaving"
+      ],
+      "upcyclingIdeas": [
+        "Polyester pellet compounding",
+        "Outdoor insulation blankets",
+        "High-durability geo-membranes"
+      ],
+      "carbonSavingsKg": 4200,
+      "description": "Bulk post-consumer polar fleece jackets and winter apparel scraps sorted specifically by fiber content. 100% polyester composition supports direct chemical recycling (depolymerization) or mechanical thermal pelletizing.",
+      "status": "PUBLISHED",
+      "viewsCount": 8,
+      "createdAt": "2026-10-03T00:11:22.602Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "senderId": "u-recycler-1",
+      "senderName": "Green Loop Fiber Recyclers",
+      "senderRole": "RECYCLER",
+      "receiverId": "u-seller-1",
+      "receiverName": "David Mitumba Trader",
+      "content": "Hello David, we saw your sorted Denim batch (list-1). We are highly interested in buying the entire 450 Kg batch. Do you offer transportation to Gikomba or should we arrange pickup?",
+      "listingId": "list-1",
+      "createdAt": "2026-10-01T00:11:22.602Z",
+      "read": true
+    },
+    {
+      "id": "msg-2",
+      "senderId": "u-seller-1",
+      "senderName": "David Mitumba Trader",
+      "senderRole": "SELLER",
+      "receiverId": "u-recycler-1",
+      "receiverName": "Green Loop Fiber Recyclers",
+      "content": "Hi Green Loop! Thanks for reaching out. We standardly offer pickup from our Gikomba depot, but we can arrange delivery for an extra KES 2,500. Let me know if that works for you!",
+      "listingId": "list-1",
+      "createdAt": "2026-10-02T00:11:22.602Z",
+      "read": false
+    }
+  ],
+  "buyerRequests": [
+    {
+      "id": "req-1",
+      "buyerId": "u-recycler-1",
+      "buyerName": "Green Loop Fiber Recyclers",
+      "buyerRole": "RECYCLER",
+      "listingId": "list-1",
+      "listingTitle": "Denim & Twill (450 Kg)",
+      "message": "Bid submitted for KES 27,500. Standard industrial recycling contract terms requested.",
+      "status": "ACCEPTED",
+      "createdAt": "2026-10-01T00:11:22.602Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1790986828100",
+      "userId": "u-recycler-1",
+      "title": "Bid Request Approved!",
+      "message": "The seller updated your bid on Denim & Twill (450 Kg) to: ACCEPTED",
+      "read": false,
+      "createdAt": "2026-10-03T00:20:28.100Z"
+    },
+    {
+      "id": "notif-1790986817535",
+      "userId": "u-admin",
+      "title": "Business Approval Needed",
+      "message": "New resource: Bob registered as RECYCLER and requires credentials review.",
+      "read": false,
+      "createdAt": "2026-10-03T00:20:17.535Z"
+    },
+    {
+      "id": "notif-1",
+      "userId": "u-seller-1",
+      "title": "New Bid Received",
+      "message": "Green Loop Fiber Recyclers requested a quotation for your Denim listing.",
+      "read": false,
+      "createdAt": "2026-10-01T00:11:22.602Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "u-admin",
+      "title": "New Registration Approval Needed",
+      "message": "Eco-Weave Mills (Manufacturer) registered and is pending document review.",
+      "read": false,
+      "createdAt": "2026-10-03T00:11:22.602Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-1790986824347-1wfc",
+      "userId": "u-seller-1",
+      "userEmail": "seller@uzilink.com",
+      "action": "USER_LOGIN",
+      "details": "User seller@uzilink.com logged in successfully.",
+      "timestamp": "2026-10-03T00:20:24.347Z"
+    },
+    {
+      "id": "audit-1790986820878-766k",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: Charlie (charlie@example.com) as SELLER",
+      "timestamp": "2026-10-03T00:20:20.878Z"
+    },
+    {
+      "id": "audit-1790986817534-nn5o",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: Bob (bob@example.com) as RECYCLER",
+      "timestamp": "2026-10-03T00:20:17.534Z"
+    },
+    {
+      "id": "audit-1790986814230-18dh",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: Alice (alice@example.com) as SELLER",
+      "timestamp": "2026-10-03T00:20:14.230Z"
+    },
+    {
+      "id": "audit-1790986649424-nxjk",
+      "userId": "u-system",
+      "userEmail": "system",
+      "action": "USER_REGISTERED",
+      "details": "New user registered: Test User (test@example.com) as SELLER",
+      "timestamp": "2026-10-03T00:17:29.424Z"
+    },
+    {
+      "id": "audit-1",
+      "action": "SYSTEM_START",
+      "details": "UziLink MVP Database populated and seeded successfully.",
+      "timestamp": "2026-10-03T00:11:22.602Z"
+    }
+  ]
+}
